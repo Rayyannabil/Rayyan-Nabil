@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Rayyan Nabil - Software Engineer & Flutter Developer">
     <title>Rayyan Nabil | Software Engineer & Flutter Developer</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         /* --- CSS Variables --- */
         :root {
-            --primary-color: #02569B; /* Deep Blue */
+            --primary-color: #02569B;
+            /* Deep Blue */
             --primary-light: #E8F1F8;
-            --accent-color: #0175C2; /* Lighter Blue */
+            --accent-color: #0175C2;
+            /* Lighter Blue */
             --text-dark: #1F2937;
             --text-light: #6B7280;
             --bg-body: #F9FAFB;
@@ -136,11 +146,12 @@
 
         /* --- Typing Animation Styles --- */
         .typing-container {
-            display: inline-block; 
+            display: inline-block;
         }
-        
-        #typing-text, #name-text {
-            display: inline; 
+
+        #typing-text,
+        #name-text {
+            display: inline;
         }
 
         #typing-text {
@@ -151,7 +162,7 @@
         .name-highlight {
             color: var(--primary-color) !important;
         }
-        
+
         .cursor {
             display: inline-block;
             width: 3px;
@@ -161,8 +172,15 @@
         }
 
         @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
         }
 
         /* --- Hero Section --- */
@@ -242,7 +260,7 @@
         .btn-outline:hover {
             background-color: var(--primary-light);
         }
-        
+
         .btn-small {
             padding: 10px 20px;
             font-size: 0.9rem;
@@ -257,7 +275,8 @@
         .hero-image img {
             width: 350px;
             height: 350px;
-            object-fit: cover; /* Cover is best for circular profile pictures */
+            object-fit: cover;
+            /* Cover is best for circular profile pictures */
             border-radius: 50%;
             border: 8px solid white;
             box-shadow: var(--shadow-lg);
@@ -275,8 +294,9 @@
             border-radius: var(--radius);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
-            aspect-ratio: 16/9; 
-            background-color: #111; /* Dark background behind images */
+            aspect-ratio: 16/9;
+            background-color: #111;
+            /* Dark background behind images */
         }
 
         .slider-track {
@@ -295,9 +315,11 @@
         .slide img {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* This makes the full image visible */
+            object-fit: contain;
+            /* This makes the full image visible */
             object-position: center;
-            background-color: #111; /* Adds dark bars for different aspect ratios */
+            background-color: #111;
+            /* Adds dark bars for different aspect ratios */
         }
 
         .slide-caption {
@@ -309,7 +331,7 @@
             color: white;
             padding: 15px 20px;
             font-size: 1rem;
-            text-align: center; 
+            text-align: center;
         }
 
         .slider-btn {
@@ -335,8 +357,13 @@
             background: white;
         }
 
-        .prev-btn { left: 20px; }
-        .next-btn { right: 20px; }
+        .prev-btn {
+            left: 20px;
+        }
+
+        .next-btn {
+            right: 20px;
+        }
 
         .slider-dots {
             position: absolute;
@@ -422,7 +449,7 @@
             box-shadow: var(--shadow-md);
             border: 1px solid var(--border-color);
         }
-        
+
         .timeline-date {
             font-weight: 700;
             color: var(--accent-color);
@@ -435,13 +462,13 @@
             font-size: 1.2rem;
             margin-bottom: 5px;
         }
-        
+
         .timeline-spec {
             color: var(--text-light);
             font-size: 0.95rem;
             margin-bottom: 10px;
         }
-        
+
         .timeline-grade {
             color: var(--primary-color);
             font-weight: 600;
@@ -450,13 +477,13 @@
 
         .achievements {
             display: flex;
-            justify-content: flex-end; 
+            justify-content: flex-end;
             gap: 10px;
             flex-wrap: wrap;
         }
 
         .timeline-item.right .achievements {
-            justify-content: flex-start; 
+            justify-content: flex-start;
         }
 
         .achievement-tag {
@@ -531,7 +558,7 @@
             margin-bottom: 10px;
             font-size: 1.8rem;
         }
-        
+
         .ai-desc {
             font-size: 1.1rem;
             color: #9CA3AF;
@@ -545,21 +572,21 @@
             flex-wrap: wrap;
             font-weight: 600;
         }
-        
+
         .ai-tool-item {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             padding: 10px 20px;
             border-radius: 30px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             gap: 8px;
             transition: transform 0.2s;
         }
-        
+
         .ai-tool-item:hover {
             transform: scale(1.05);
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             border-color: #60A5FA;
         }
 
@@ -631,7 +658,7 @@
             color: var(--primary-color);
             margin-bottom: 15px;
         }
-        
+
         .contact-intro p {
             font-size: 1.2rem;
             color: var(--text-light);
@@ -654,7 +681,7 @@
             align-items: center;
             justify-content: space-between;
             text-decoration: none;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             position: relative;
             overflow: hidden;
@@ -674,10 +701,10 @@
 
         .linktree-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             border-color: var(--primary-color);
         }
-        
+
         .linktree-card:hover::before {
             width: 100%;
             opacity: 0.05;
@@ -715,12 +742,12 @@
             font-size: 0.9rem;
             color: var(--text-light);
         }
-        
+
         .linktree-arrow {
             color: var(--text-light);
             font-size: 1.2rem;
         }
-        
+
         .linktree-card:hover .linktree-arrow {
             color: var(--primary-color);
             transform: translateX(5px);
@@ -798,6 +825,7 @@
                 text-align: center;
                 gap: 40px;
             }
+
             .typing-container {
                 justify-content: center;
             }
@@ -809,17 +837,17 @@
             .hero-text h1 {
                 font-size: 2.5rem;
             }
-            
+
             .linktree-card {
                 flex-direction: column;
                 text-align: center;
                 gap: 15px;
             }
-            
+
             .linktree-left {
                 flex-direction: column;
             }
-            
+
             .linktree-info {
                 text-align: center;
             }
@@ -827,35 +855,37 @@
             .two-col-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .slider-container {
-                aspect-ratio: auto; 
+                aspect-ratio: auto;
                 height: 400px;
             }
         }
 
         @media (max-width: 768px) {
+
             /* Responsive Timeline */
             .timeline::after {
                 left: 31px;
             }
-            
+
             .timeline-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-            
+
             .timeline-item::after {
                 left: 21px;
             }
-            
-            .timeline-item.left, .timeline-item.right {
+
+            .timeline-item.left,
+            .timeline-item.right {
                 left: 0;
                 text-align: left;
             }
-            
-            .timeline-item.left .achievements, 
+
+            .timeline-item.left .achievements,
             .timeline-item.right .achievements {
                 justify-content: flex-start;
             }
@@ -870,7 +900,7 @@
                 background: white;
                 padding: 20px;
                 box-shadow: var(--shadow-md);
-                border-top:1px solid var(--border-color);
+                border-top: 1px solid var(--border-color);
             }
 
             .nav-links.active {
@@ -880,18 +910,19 @@
             .menu-toggle {
                 display: block;
             }
-            
+
             .hero-image img {
                 width: 280px;
                 height: 280px;
             }
-            
+
             .linktree-title {
                 font-size: 1rem;
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -917,7 +948,7 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <span class="role">Software Engineer & Flutter Developer</span>
-                
+
                 <h1 style="margin-bottom: 1rem;">
                     <div class="typing-container">
                         <span id="typing-text"></span>
@@ -925,13 +956,15 @@
                         <span class="cursor">|</span>
                     </div>
                 </h1>
-                
+
                 <p>
-                    Motivated and detail-oriented Software Engineer & Flutter Developer with a passion for mobile app development, web design, and problem-solving. 
-                    I am open for <strong>freelance projects</strong> and collaborations to build <strong>fast, scalable applications and websites</strong>. 
+                    Motivated and detail-oriented Software Engineer & Flutter Developer with a passion for mobile app
+                    development, web design, and problem-solving.
+                    I am open for <strong>freelance projects</strong> and collaborations to build <strong>fast, scalable
+                        applications and websites</strong>.
                     Ready to bring your ideas to life on both Web and Mobile platforms.
                 </p>
-                
+
                 <div class="hero-buttons">
                     <a href="mailto:rayyannabil170@gmail.com" class="btn btn-primary">
                         Let's Collaborate <i class="fas fa-handshake"></i>
@@ -943,7 +976,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://z-cdn-media.chatglm.cn/files/802e098c-4f91-4743-a523-6596cdfcb3a6.png?auth_key=1867876771-4f4362b135c6450fbd4638b51025e979-0-f3d2e3e9426366e6f8ace9504e945a48" alt="Rayyan Nabil Profile Photo">
+                <img src="profile.png" alt="Rayyan Nabil Profile Photo">
             </div>
         </div>
     </header>
@@ -954,35 +987,31 @@
         <section id="events" class="slider-section">
             <div class="container">
                 <h2 class="section-title">Events & Competitions</h2>
-                
+
                 <div class="slider-container">
                     <div class="slider-track" id="slider-track">
-                        
+
                         <!-- Slide 1: YESIST12 -->
                         <div class="slide">
-                            <img src="https://z-cdn-media.chatglm.cn/files/eca7a7dc-bf43-4ee4-8456-d5ada20972ee.jpg?auth_key=1867882347-2c0307e5d8ac4b92befde9f45d96b832-0-59f89f13bd8ba7250962a50247bec99a" alt="YESIST12 Event">
+                            <img src="ieee.jfif" alt="YESIST12 Event">
                             <div class="slide-caption">Participating in YESIST12 - Age of Innovation at AASTMT</div>
                         </div>
                         <div class="slide">
                             <img src="slide5.jpg" alt="WE School Celebration Post">
-                            <div class="slide-caption">Participating in YESIST12 - Age of Innovation at AASTMT</div>
+                            <div class="slide-caption">WE School Celebration Post</div>
                         </div>
 
                         <!-- Slide 2: Group Winner -->
                         <div class="slide">
-                            <img src="https://z-cdn-media.chatglm.cn/files/4fba28b2-91ef-4021-ba8f-660ccbe0baa0.jpg?auth_key=1867882347-f5da7cabe0054dbe93eb710410babccc-0-a7c3d134c3db588d217e3121b0617db1" alt="Winning Team Group Photo">
+                            <img src="ministry_of_high_education.jpg" alt="Winning Team Group Photo">
                             <div class="slide-caption">Ministry of Higher Education - We Won in Our Way</div>
                         </div>
 
-                        <!-- Slide 3: Winner 50,000 EGP -->
-                        <div class="slide">
-                            <img src="https://z-cdn-media.chatglm.cn/files/16d7cb25-627b-40e0-b19a-b187135bc9ae.jpg?auth_key=1867882347-78a189f12f194131926458086dc1b8f4-0-684f2e966818f4b22e9c8755d3061cd8" alt="Winner Certificate">
-                            <div class="slide-caption">First Place Winner - iClub 2025 (50,000 EGP)</div>
-                        </div>
+
 
                         <!-- Slide 4: Campus -->
                         <div class="slide">
-                            <img src="https://z-cdn-media.chatglm.cn/files/4d006ba5-3663-4b74-9ddf-e239af312252.jpg?auth_key=1867882347-9713527836034cddb6d2e8ad8cf9ab64-0-be65dc9e96bb4f5a1f42a81676f3786d" alt="SU Tech Campus">
+                            <img src="sut.jfif" alt="SU Tech Campus">
                             <div class="slide-caption">At SU TECH ELSEWEDY UNIVERSITY</div>
                         </div>
 
@@ -991,7 +1020,7 @@
                     <!-- Controls -->
                     <button class="slider-btn prev-btn" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
                     <button class="slider-btn next-btn" id="next-btn"><i class="fas fa-chevron-right"></i></button>
-                    
+
                     <div class="slider-dots" id="slider-dots">
                         <!-- Dots injected by JS -->
                     </div>
@@ -1003,9 +1032,9 @@
         <section>
             <div class="container">
                 <h2 class="section-title">Education</h2>
-                
+
                 <div class="timeline">
-                    
+
                     <!-- Item 1: Faculty (Current) -->
                     <div class="timeline-item left">
                         <div class="timeline-content">
@@ -1023,7 +1052,8 @@
                             <span class="timeline-date">2022 - 2025</span>
                             <div class="timeline-school">
                                 <h3>Pearson BTEC</h3>
-                                <p class="timeline-spec">International Subsidiary Level 3 Diploma in Information Technology</p>
+                                <p class="timeline-spec">International Subsidiary Level 3 Diploma in Information
+                                    Technology</p>
                                 <span class="timeline-grade">Grade: Merit</span>
                             </div>
                         </div>
@@ -1053,7 +1083,7 @@
             <div class="container">
                 <h2 class="section-title">Technical Skills</h2>
                 <div class="skills-grid">
-                    
+
                     <!-- Mobile -->
                     <div class="skill-category">
                         <h3>Mobile Development (Primary)</h3>
@@ -1126,12 +1156,13 @@
             <div class="container">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
-                    
+
                     <!-- Project 1 -->
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">Tawkeelha</div>
-                            <p class="project-desc">A Flutter application designed to help people find and buy car spares easily.</p>
+                            <p class="project-desc">A Flutter application designed to help people find and buy car
+                                spares easily.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">Flutter</span>
                                 <span class="tech-badge">Mobile</span>
@@ -1143,7 +1174,8 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">Mal3ab</div>
-                            <p class="project-desc">A convenient application for booking football street matches with friends.</p>
+                            <p class="project-desc">A convenient application for booking football street matches with
+                                friends.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">Flutter</span>
                                 <span class="tech-badge">Booking System</span>
@@ -1155,7 +1187,8 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">Senorita</div>
-                            <p class="project-desc">A transportation application dedicated to girls only, providing enhanced safety and security.</p>
+                            <p class="project-desc">A transportation application dedicated to girls only, providing
+                                enhanced safety and security.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">Flutter</span>
                                 <span class="tech-badge">Safety</span>
@@ -1167,7 +1200,8 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">Souq El-Gomaa</div>
-                            <p class="project-desc">A versatile e-commerce platform for buying and selling unique products.</p>
+                            <p class="project-desc">A versatile e-commerce platform for buying and selling unique
+                                products.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">Flutter</span>
                                 <span class="tech-badge">E-commerce</span>
@@ -1179,7 +1213,8 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">Converter Application</div>
-                            <p class="project-desc">Multi-functional unit conversion app solving everyday calculation needs.</p>
+                            <p class="project-desc">Multi-functional unit conversion app solving everyday calculation
+                                needs.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">Flutter</span>
                                 <span class="tech-badge">Utility</span>
@@ -1203,7 +1238,8 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">Porsche Website</div>
-                            <p class="project-desc">Interactive website designed for Porsche enthusiasts to explore models.</p>
+                            <p class="project-desc">Interactive website designed for Porsche enthusiasts to explore
+                                models.</p>
                             <div class="project-tech">
                                 <span class="tech-badge">Frontend</span>
                                 <span class="tech-badge">Interactive</span>
@@ -1215,7 +1251,8 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">College Tournament Website</div>
-                            <p class="project-desc">Full-stack website for managing and organizing college tournaments.</p>
+                            <p class="project-desc">Full-stack website for managing and organizing college tournaments.
+                            </p>
                             <div class="project-tech">
                                 <span class="tech-badge">Full-stack</span>
                                 <span class="tech-badge">Management</span>
@@ -1239,7 +1276,8 @@
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-title">CRUD App</div>
-                            <p class="project-desc">Full-stack application demonstrating data management capabilities.</p>
+                            <p class="project-desc">Full-stack application demonstrating data management capabilities.
+                            </p>
                             <div class="project-tech">
                                 <span class="tech-badge">Full-stack</span>
                                 <span class="tech-badge">Database</span>
@@ -1255,7 +1293,7 @@
         <section id="experience" style="background-color: white;">
             <div class="container">
                 <div class="two-col-grid">
-                    
+
                     <!-- Experience Column -->
                     <div>
                         <h2 class="section-title">Volunteering</h2>
@@ -1263,14 +1301,16 @@
                             <span class="exp-role">Team Leader & Coordinator</span>
                             <span class="exp-org">Leaders Club – WE School for Applied Technology</span>
                             <p style="color: var(--text-light); font-size: 0.95rem;">
-                                Organized and led activities fostering teamwork and leadership. Coordinated school-wide events successfully.
+                                Organized and led activities fostering teamwork and leadership. Coordinated school-wide
+                                events successfully.
                             </p>
                         </div>
 
                         <h2 class="section-title" style="margin-top: 40px;">Soft Skills</h2>
                         <div class="skill-list">
                             <span class="skill-tag" style="background: #E0E7FF; color: #4338CA;">Problem-Solving</span>
-                            <span class="skill-tag" style="background: #DCFCE7; color: #15803D;">Team Collaboration</span>
+                            <span class="skill-tag" style="background: #DCFCE7; color: #15803D;">Team
+                                Collaboration</span>
                             <span class="skill-tag" style="background: #FEF3C7; color: #B45309;">Public Speaking</span>
                             <span class="skill-tag" style="background: #F3E8FF; color: #7E22CE;">Time Management</span>
                         </div>
@@ -1304,7 +1344,7 @@
                     <h2>Let's Work Together</h2>
                     <p>I'm available for freelance projects and collaborations. Reach out below!</p>
                 </div>
-                
+
                 <div class="linktree-grid">
                     <!-- Email Card -->
                     <a href="mailto:rayyannabil170@gmail.com" class="linktree-card">
@@ -1353,7 +1393,7 @@
                             <i class="fas fa-chevron-right"></i>
                         </div>
                     </a>
-                    
+
                     <!-- X Card -->
                     <a href="https://x.com/rayyan_nabil1" target="_blank" class="linktree-card">
                         <div class="linktree-left">
@@ -1403,14 +1443,14 @@
             // Typewriter Animation Logic
             const greetingText = "Hello, I'm ";
             const nameText = "Rayyan Nabil";
-            
+
             const greetingElement = document.getElementById('typing-text');
             const nameElement = document.getElementById('name-text');
-            
+
             let greetingIndex = 0;
             let nameIndex = 0;
             let isDeleting = false;
-            let phase = 'typing-greeting'; 
+            let phase = 'typing-greeting';
 
             function typeWriter() {
                 let typingSpeed = 100;
@@ -1420,18 +1460,18 @@
                         greetingElement.textContent = greetingText.substring(0, greetingIndex + 1);
                         greetingIndex++;
                         if (greetingIndex === greetingText.length) {
-                            phase = 'typing-name'; 
-                            return setTimeout(typeWriter, 300); 
+                            phase = 'typing-name';
+                            return setTimeout(typeWriter, 300);
                         }
                     }
-                } 
+                }
                 else if (phase === 'typing-name') {
                     if (!isDeleting) {
                         nameElement.textContent = nameText.substring(0, nameIndex + 1);
                         nameIndex++;
                         if (nameIndex === nameText.length) {
-                            isDeleting = true; 
-                            return setTimeout(typeWriter, 2000); 
+                            isDeleting = true;
+                            return setTimeout(typeWriter, 2000);
                         }
                     } else {
                         if (nameIndex > 0) {
@@ -1452,7 +1492,7 @@
                     } else {
                         isDeleting = false;
                         phase = 'typing-greeting';
-                        return setTimeout(typeWriter, 500); 
+                        return setTimeout(typeWriter, 500);
                     }
                 }
 
@@ -1498,7 +1538,7 @@
                 currentSlide = (currentSlide - 1 + slides.length) % slides.length;
                 updateSlider();
             };
-            
+
             const goToSlide = (index) => {
                 currentSlide = index;
                 updateSlider();
@@ -1506,8 +1546,9 @@
 
             nextBtn.addEventListener('click', nextSlide);
             prevBtn.addEventListener('click', prevSlide);
-            setInterval(nextSlide, 5000); 
+            setInterval(nextSlide, 5000);
         });
     </script>
 </body>
+
 </html>
